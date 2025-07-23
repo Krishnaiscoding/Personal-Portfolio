@@ -1,0 +1,265 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+      display: flex;
+    }
+
+    .sidebar {
+      width: 220px;
+      background-color: #6c63ff;
+      height: 100vh;
+      color: white;
+      padding: 30px 20px;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+
+    .sidebar h2 {
+      margin-bottom: 40px;
+    }
+
+    .sidebar nav a {
+      display: block;
+      color: white;
+      text-decoration: none;
+      margin: 15px 0;
+      font-weight: 600;
+    }
+
+    .sidebar nav a:hover {
+      text-decoration: underline;
+    }
+
+    .content {
+      margin-left: 240px;
+      padding: 40px;
+      flex: 1;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .hero {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      color: #6c63ff;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-bottom: 60px;
+      
+    }
+
+    .project-card {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .project-card h3 {
+      margin-bottom: 10px;
+      color: #5548c8;
+      
+    }
+    .project-card ul{
+        padding-left: 20px;
+    }
+
+    .contact {
+      background: #eee;
+      padding: 20px;
+      border-radius: 8px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+      background: #ddd;
+      font-size: 0.9rem;
+    }
+    .education{
+        margin-bottom: 60px;
+    }
+    .education ul{
+        margin-bottom: 20px;
+        color: #6c63ff;
+    }
+    .education li{
+        background: white;
+        padding:15px;
+        border-radius: 8px;
+        box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+        margin-bottom: 10px;
+    }
+    .objective{
+        margin-bottom: 60px;
+    }
+    .objective-card{
+        background: white;
+        padding: 15px;
+        border-radius: 8px;
+        
+        margin-bottom: 10px;
+    }
+    .skills{
+        margin-bottom: 60px;
+    }
+    .skills ul{
+        margin-bottom: 20px;
+        color: #6c63ff;
+    }
+    .skills li{
+        background: white;
+        padding:15px;
+        border-radius: 8px;
+        box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+        margin-bottom: 10px;
+    }
+    
+    
+
+    @media (max-width: 768px) {
+      .sidebar {
+        position: static;
+        width: 100%;
+        height: auto;
+        text-align: center;
+      }
+
+      .content {
+        margin-left: 0;
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="sidebar">
+    <h2>Krishna</h2>
+    <nav>
+      <a href="#about">About Me</a>
+      <a href="#skills">Technical Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#education">Education</a>
+      <a href="#objective">Objective</a>
+      <a href="#contact">Contact Me</a>
+    </nav>
+  </div>
+
+  <div class="content">
+    <header>
+      <h1>Krishna Verma</h1>
+      <p>Full Stack Developer</p>
+      <p ><em>"Turning coffee into code, and ideas into impact"</em></p>
+    </header>
+
+    <section id="about">
+      <div class="hero">
+        
+        <h2>About Me</h2>
+        <p>I am an organized and dependable candidate successful at managing multiple priorities with a positive attitude. Willingness to take on added responsibilities to meet team goals. Pursuing full-time role that presents professional challenges and leverages interpersonal skills, effective time management, and problemsolving expertise.</p>
+      </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <h2 style="text-align: center;margin-bottom: 15px;">Technical Skills</h2>
+        <ul>
+            <li>Programming Skills : Java, Python, HTML, CSS</li>
+            <li>Web Development : Front-End Development, Responsive Design</li>
+            <li>Core Concepts : Object-Oriented Programming(OOPs), Data Structures, Algorithms</li>
+            <li>Tools & Platforms : Visual Studio Code, NetBeans, IntelliJ IDEA, Github, LeetCode</li>
+        </ul>
+    </section>
+
+    <section id="projects">
+      <h2 style="text-align: center;padding-bottom: 15px;">Projects</h2>
+      <div class="projects">
+        <div class="project-card">
+          <h3>Student Management System</h3>
+          <p>It is a web application designed to manage student records, track academic performance, and organize administrative tasks efficiently. It streamlines enrollment, and grading for educational institutions.</p>
+        </div>
+        <div class="project-card">
+          <h3>Foozy</h3>
+          <p>It is a desktop-based food ordering system tailored for a cafe.It enables user to select items, set quantity , and generate a printable bill.</p>
+        </div>
+        <div class="project-card">
+          <h3>Task Manager</h3>
+          <p>A to-do list app with user login, task filtering, and dark mode.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="education" class="education">
+        <h2 style="text-align: center;margin-bottom: 15px;">Education</h2>
+        <ul>
+            <li>Salwan Public School , Old Rajinder Nagar , New Delhi, CBSE Board</li>
+            <li>Bachelor of Technology (B.Tech) – Information Technology</li>
+            <li>Dr. Akhilesh Gupta Institute of Professional Studies, GGSIPU, New Delhi , Expected Graduation: 2026</li>
+        </ul>
+    </section>
+
+    <section id="objective" class="objective">
+        <h2 style="text-align: center;margin-bottom: 15px;">Objective</h2>
+        <div class="objective-card">
+            <p>Aspiring software developer and B.Tech student in Information Technology, seeking an internship or entry-level position to apply academic knowledge and hands-on coding experience in real-world software projects. </p>
+        </div>
+    </section>
+
+    
+
+    <section id="contact">
+      <h2 style="text-align: center;padding-bottom: 15px;">Contact Me</h2>
+      <div class="contact">
+        <p>Email: krishnaverma110060@gmail.com</p>
+        <p>Contact: +91 9711818848</p>
+        <p>LinkedIn: https://www.linkedin.com/in/krishna-verma-b71429271/</p>
+        <p>GitHub: https://github.com/Krishnaiscoding</p>
+        <p>LeetCode: https://leetcode.com/u/krishnaiscoding/</p>
+      </div>
+    </section>
+
+    
+
+    
+    
+    
+
+    <footer>
+      &copy; 2025 Krishna Verma | Krishnaiscoding | Made With Love
+    </footer>
+  </div>
+
+</body>
+</html>
